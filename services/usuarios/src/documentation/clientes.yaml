@@ -1,0 +1,53 @@
+openapi: 3.0.0
+paths:
+  /kpideclientes:
+    get:
+      summary: Retorna el promedio y desviación estandar de las edades.
+      tags: [User]
+      operationID: profile
+      responses:
+          200:
+            description: Regresa el promedio y desviación de los usuarios registrados
+  /listclientes:
+    get:
+      summary: Retorna lista de usuarios.
+      tags: [User]
+      operationID: profile
+      responses:
+          200:
+            description: Regresa en una lista todos los usuarios registrados
+  /creacliente:
+    post:
+      summary: Crea un cliente.
+      tags: [User]
+      operationID: profile
+      responses:
+          200:
+            description: Nuevo cliente creadao correctamente.
+components:
+  schemas:
+      Cliente:
+          type: object
+          properties:
+              nombre:
+                  type: string
+                  description: Nombre del cliente
+              apellido:
+                  type: string
+                  description: Apellido del cliente
+              edad:
+                  type: string
+                  description: Edad del cliente
+              fecha:
+                  type: string
+                  description: Fecha de nacimiento del cliente (dd/mm/yyyy)
+          required:
+              - nombre
+              - apellido
+              - edad
+              - fecha
+          example:
+              nombre: "Juan"
+              apellido: "Perez"
+              edad: "25"
+              fecha: "01/01/2000"

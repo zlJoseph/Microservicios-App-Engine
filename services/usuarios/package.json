@@ -1,0 +1,34 @@
+{
+  "name": "microservicios",
+  "version": "1.0.0",
+  "description": "Microservicios reto backend",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/server.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d ./build --source-maps",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "microservicios",
+    "backend"
+  ],
+  "author": "Jose Omar Vegas Carrillo",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.22.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,4 @@
+dispatch:
+
+  - url: "*/usuarios/*"
+    service: usuarios

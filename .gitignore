@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+/build
+/services/usuarios/node_modules
+/services/usuarios/build
+/services/usuarios/src/firebase.json
